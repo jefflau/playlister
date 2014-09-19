@@ -1,0 +1,13 @@
+<head>
+  <title>Playlister</title>
+</head>
+
+<template name="home">
+  {{#if playlists}}
+  	{{#each playlists}}
+  		<a href="{{pathFor 'playlist'}}">{{name}}</a>
+  	{{/each}}
+  {{else}}
+  	No playlists
+  {{/if}}
+</template>

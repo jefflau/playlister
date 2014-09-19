@@ -1,0 +1,10 @@
+<template name="playlist">
+	{{name}}
+	<form>
+		<input class="input new-playlist-link" type="text" placeholder="Add a youtube link">
+		<button class="button btn btn-primary" type="submit">Add</button>
+	</form>
+	{{#each items}}
+		{{link}}
+	{{/each}}
+</template>
